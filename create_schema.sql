@@ -1,0 +1,9 @@
+CREATE TABLE
+    USERS (id UUID PRIMARY KEY, NAME TEXT);
+
+CREATE TABLE
+    debezium_signal (
+        id VARCHAR(42) PRIMARY KEY,
+        TYPE VARCHAR(32) NOT NULL,
+        DATA VARCHAR(2048) NULL
+    );
