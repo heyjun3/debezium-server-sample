@@ -14,7 +14,7 @@ services:
     ports:
       - 5432:5432
 
-  debezium-server-postgres:
+  debezium-server:
     image: quay.io/debezium/server
     environment:
       GOOGLE_APPLICATION_CREDENTIALS: /tmp/credentials/service-account.json
