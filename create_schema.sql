@@ -2,6 +2,9 @@ CREATE TABLE
     USERS (id UUID PRIMARY KEY, NAME TEXT);
 
 CREATE TABLE
+    comments (id UUID PRIMARY KEY, content TEXT);
+
+CREATE TABLE
     debezium_signal (
         id VARCHAR(42) PRIMARY KEY,
         TYPE VARCHAR(32) NOT NULL,
