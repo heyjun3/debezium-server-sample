@@ -5,6 +5,12 @@ CREATE TABLE
     comments (id UUID PRIMARY KEY, content TEXT);
 
 CREATE TABLE
+    posts (id UUID PRIMARY KEY, content TEXT);
+
+CREATE TABLE
+    heartbeat (id UUID PRIMARY KEY);
+
+CREATE TABLE
     debezium_signal (
         id VARCHAR(42) PRIMARY KEY,
         TYPE VARCHAR(32) NOT NULL,
